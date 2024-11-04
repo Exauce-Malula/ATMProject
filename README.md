@@ -2,7 +2,7 @@
 A banking project I worked over the 2023/2024 summer holidays after my GCSEs. I wanted to see how proficient I was with the language after also learning it over the summer.
 I wanted to see if I could effectively use dynamic memory allocation, pointers and object - oriented programming, learning and knowing how to use these would help with my Computer Science A-Level.
 
-The majority of the programming was done by me, however, some areas such as obscuring the password, and some of the file handling was done by me. 
+The majority of the programming was done by me, however, some areas such as obscuring the password, retrieving the time, and some of the file handling was done by AI generation. 
 
 # Login
 The user details are contained within a class named "NewLoginDetails", utilising setters, getters and constructors to encapsulate/protect the username/password. In the function "login", the user makes the choice to either create an account, or log in into an account.
@@ -12,4 +12,4 @@ If the user decides to create a new account, they input a new username and passw
 If the user decides to login, the user inputs their username and password, which becomes stored as global variables. However, if the username is correct yet the password is incorrect, the username is set to "NULL" to prevent login.
 
 # Balance
-If there are any errors when opening the file, an error message will appear and end the program. Otherwise, 
+If there are any errors when opening the file, an error message will appear and end the program. Otherwise, a welcome message showing the username and balance is printed, all of this happens within the function "balance". The next function, "transaction" gives the user the option between depositing money, withdrawing money, send money to an account, check transaction history, or exit the application. Switch cases are utilised for the user to select different options.
