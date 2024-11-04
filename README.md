@@ -12,4 +12,15 @@ If the user decides to create a new account, they input a new username and passw
 If the user decides to login, the user inputs their username and password, which becomes stored as global variables. However, if the username is correct yet the password is incorrect, the username is set to "NULL" to prevent login.
 
 # Balance
-If there are any errors when opening the file, an error message will appear and end the program. Otherwise, a welcome message showing the username and balance is printed, all of this happens within the function "balance". The next function, "transaction" gives the user the option between depositing money, withdrawing money, send money to an account, check transaction history, or exit the application. Switch cases are utilised for the user to select different options.
+If there are any errors when opening the file, an error message will appear and end the program. Otherwise, a welcome message showing the username and balance is printed, all of this happens within the function "balance". 
+
+The next function, "transaction" gives the user the option between depositing money, withdrawing money, send money to an account, check transaction history, or exit the application. Switch cases are utilised for the user to select different options.
+
+To deposit or withdraw, if the user decides they don't want to deposit/withdraw, they would input 0.00. For a deposit, the value must be positive. For a withdrawal, the value must be negative, and that their balance must be greater than -$100.00, as this is the user's overdraft limit. A class is used to represent the action between the balance and the value inputted for either a deposit/withdrawal. A text file is created to store a receipt of the interaction, if there is already a file, the history is added to that file.
+
+To check the history, the transaction history file is printed. 
+
+Additionally, there was an option to send money to other accounts, however, due to the summer being over, plus unable to think of any ideas on how to correctly implement it, I was unable to finish this. Remnants of this code is still left in "ATMProject_BALANCE", as I thought of utilising a notification system in order to notify the user recieving money.
+
+# Improvements
+Overall, I think I did well, especially with this being my first ever C++ coding project. However, I could've improved the code by avoiding repeat blocks of codes, which could be represented within multiple functions.
